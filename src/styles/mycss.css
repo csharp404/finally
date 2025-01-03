@@ -1,0 +1,215 @@
+:root {
+ 
+  --color-secondary: #ffffff; 
+  --color-accent: #00b1c1;
+  --color-primary: #1F316F;
+}
+
+.form-control {
+  font-family:Arial, Helvetica, sans-serif;
+          font-size: 20px;
+          border: none;
+          outline: none;
+          padding: 8px 12px;
+          background-color: var(--color-secondary);
+          border-radius: 2px;
+          border-bottom: 3px solid var(--color-primary);
+}
+
+.form-control:focus{
+  box-shadow: none;
+  outline: none;
+  border-bottom:3px solid var(--color-accent);
+}
+
+.form-label{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 5px;}
+
+  .form-select {
+    font-size: 14px;
+    background-color: var(--color-secondary);
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    border-bottom: 3px solid var(--color-primary);
+    color: var(--color-primary); /* Ensure text color is the same as primary */
+  }
+  
+  .form-select:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom: 3px solid var(--color-accent); /* You can change this color to highlight focus */
+  }
+
+  .form-select-item{
+background-color: var(--color-primary);
+    font-size: 15px;
+  }
+
+  .form-select option {
+    background-color: var(--color-primary);
+    color: var(--color-accent); /* Placeholder color */
+    font-size: 15px; /* Optional: Make it italic to differentiate */
+  }
+  .text-center .btn{  
+    border: none;
+    color: var(--color-secondary);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    width: 150px;
+    justify-content: center;
+    transition: background-color 0.25s;
+  }
+  .btn:hover{color: var(--color-secondary);
+    background-color: var(--color-accent);}
+
+    .card-emp {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: var(--color-secondary);
+  width: 18rem;
+  margin: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-emp:hover {
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Card image styling */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--color-primary);
+}
+
+/* Card body styling */
+.card-body {
+  padding: 15px;
+}
+
+/* Card title styling */
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+/* Card text styling */
+.card-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+/* Button inside the card */
+.card-body .btn {
+  border: none;
+  color: var(--color-secondary);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+  background-color: var(--color-primary);
+  width: 100%;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.card-body .btn:hover {
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
+}
+.text-center-title{
+  background-color: var(--color-primary) !important;
+  color: #00b1c1;
+}
+.text-white{
+  text-align: center;
+}
+
+/* Dropdown Button Style */
+.btn-dropdown {
+  border: none;
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 12px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+/* Prevent the name from changing color */
+.btn-dropdown span {
+  color: var(--color-primary);
+}
+
+/* Hover state for the button */
+.btn-dropdown:hover {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Prevent hover effect from affecting the name */
+.btn-dropdown:hover span {
+  color: var(--color-primary);
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  background-color: var(--color-primary);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.dropdown-item {
+  font-size: 16px;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  border: none;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-item:hover {
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
+}
+
+/* Optional: Custom text styles for the dropdown */
+.text-light {
+  color: var(--color-secondary) !important;
+}
+
+.codeemr{
+  color: var(--color-secondary) !important;
+}
+.code-type{
+  color: var(--color-secondary) !important;
+}
